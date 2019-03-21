@@ -4,6 +4,16 @@
     height: 200px;
     overflow-y: scroll;
     overflow-x: hidden;
+
+    .trumbowyg-dropdown-header {
+        overflow: hidden;
+        display: flex;
+
+        > .category-toggle {
+            float: none;
+            flex-grow: 1;
+        }
+    }
 }
 
 .trumbowyg-dropdown-emojicat svg {
