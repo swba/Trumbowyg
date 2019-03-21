@@ -12,6 +12,7 @@
     button {
         position: relative;
         white-space: nowrap;
+        height: auto;
 
         &:after {
             content: "";
