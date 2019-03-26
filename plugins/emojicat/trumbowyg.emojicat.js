@@ -10914,7 +10914,7 @@
         // Add emoji to the dropdown.
         $.each(trumbowyg.o.plugins.emojicat.emojiList, function (i, emoji) {
             var btnName = 'emoji-' + emoji.name,
-                btnHtml = '<span class="emoji emoji-' + emoji.name + '">' + emoji.code_decimal + '</span>';
+                btnHtml = '<em class="emoji emoji-' + emoji.name + '">' + emoji.code_decimal + '</em>';
 
             trumbowyg.addBtnDef(btnName, {
                 hasIcon: false,
