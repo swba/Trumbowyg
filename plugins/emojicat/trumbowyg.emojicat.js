@@ -10914,11 +10914,11 @@
         // Add emoji to the dropdown.
         $.each(trumbowyg.o.plugins.emojicat.emojiList, function (i, emoji) {
             var btnName = 'emoji-' + emoji.name,
-                btnHtml = '<em class="emoji emoji-' + emoji.name + '">' + emoji.code_decimal + '</em>';
+                btnHtml = '<img src="' + onePixelImageData + '" class="emoji emoji-' + emoji.name + '" alt="' + emoji.code_decimal +'"/>';
 
             trumbowyg.addBtnDef(btnName, {
                 hasIcon: false,
-                text: emoji.code_decimal,
+                text: btnHtml,
                 class: 'emoji-wrapper category-' + emoji.category,
                 fn: function () {
                     trumbowyg.execCmd('insertHTML', btnHtml);
@@ -10931,4 +10931,7 @@
 
         return dropdown;
     }
+
+    var onePixelImageData = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=';
+
 })(jQuery);
