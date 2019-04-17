@@ -250,7 +250,7 @@ $slow-transition-duration: 300ms !default;
 }
 
 .trumbowyg-dropdown {
-    width: 200px;
+    min-width: 200px;
     border: 1px solid $light-color;
     padding: 5px 0;
     border-top: none;
@@ -694,7 +694,7 @@ body.trumbowyg-body-fullscreen {
         }
     }
     .trumbowyg-fullscreen {
-        .trumbowyg-button-group .trumbowyg-fullscreen-button svg {
+        .trumbowyg-button-pane .trumbowyg-button-group:not(:empty) .trumbowyg-fullscreen-button svg {
             color: $light-color;
             fill: transparent;
         }
